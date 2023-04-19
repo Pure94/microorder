@@ -21,8 +21,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.microorder.productservice.common.MongoDBTestContainer;
-import com.microorder.productservice.productmanager.dto.ProductRequest;
-import com.microorder.productservice.productmanager.dto.ProductResponse;
+import com.microorder.productservice.productmanager.model.ProductRequest;
+import com.microorder.productservice.productmanager.model.ProductResponse;
 import java.util.List;
 
 @SpringBootTest

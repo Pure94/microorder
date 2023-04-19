@@ -1,7 +1,7 @@
 package com.microorder.productservice.productmanager;
 
-import com.microorder.productservice.productmanager.dto.ProductRequest;
-import com.microorder.productservice.productmanager.dto.ProductResponse;
+import com.microorder.productservice.productmanager.model.ProductRequest;
+import com.microorder.productservice.productmanager.model.ProductResponse;
 import java.util.List;
 
 import lombok.RequiredArgsConstructor;
@@ -29,5 +29,4 @@ class ProductManager implements ProductManagerFacade
                 .map(ProductMapper::mapToResponse)
                 .toList();
     }
-
 }

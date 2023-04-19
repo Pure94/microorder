@@ -1,4 +1,4 @@
-package com.microorder.productservice.productmanager.dto;
+package com.microorder.productservice.productmanager.model;
 
 import lombok.Builder;
 
