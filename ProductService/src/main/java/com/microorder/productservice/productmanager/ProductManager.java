@@ -13,7 +13,6 @@ class ProductManager implements ProductManagerFacade
 {
     private final ProductRepository productRepository;
 
-    @Override
     public String createProduct(final ProductRequest product)
     {
         final ProductEntity productEntity = ProductMapper.mapToEntity(product);
@@ -22,7 +21,6 @@ class ProductManager implements ProductManagerFacade
         return productEntity.getId();
     }
 
-    @Override
     public List<ProductResponse> getProducts()
     {
         return productRepository.findAll().stream()
