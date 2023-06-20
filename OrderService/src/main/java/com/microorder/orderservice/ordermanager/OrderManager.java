@@ -9,11 +9,13 @@ class OrderManager implements OrderManagerFacade
 {
     private final OrderRepository orderRepository;
 
-    public void placeOrder(final OrderRequest orderRequest)
+    public String placeOrder(final OrderRequest orderRequest)
     {
-        final OrderEntity orderEntity = OrderMapper.mapToOrderEntity(orderRequest);
+        final Order orderEntity = OrderMapper.mapToOrderEntity(orderRequest);
         orderEntity.setOrderNumber(UUID.randomUUID());
 
         orderRepository.save(orderEntity);
+
+        return orderEntity.getOrderNumber().toString();
     }
 }

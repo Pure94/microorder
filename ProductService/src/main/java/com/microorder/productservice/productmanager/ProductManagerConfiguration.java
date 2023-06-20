@@ -3,7 +3,7 @@ package com.microorder.productservice.productmanager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration (proxyBeanMethods = false)
+@Configuration(proxyBeanMethods = false)
 class ProductManagerConfiguration
 {
     @Bean
